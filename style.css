@@ -10,3 +10,9 @@ body {
     font-style: normal;
 
 }
+
+h1 {
+  font-family: 'cmu_serifroman', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
