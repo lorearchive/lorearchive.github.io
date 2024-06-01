@@ -1,0 +1,78 @@
+
+body {
+  background-color: rgb(20, 20, 20);
+  margin: 0px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#menu {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#menuitems {
+  margin-left: clamp(4rem, 20vw, 48rem);
+}
+
+.explain {
+  text-align: left;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-left: 1px;
+}
+
+#menuitems:hover > .menuitem {
+  opacity: 0.3;
+}
+
+#menuitems:hover > .menuitem:hover {
+  opacity: 1;
+}
+
+.menuitem {
+  color: white;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  transition: opacity 400ms ease;
+}
+
+#menubackgroundpattern {
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.2) 9%, 
+    transparent 9%
+  );
+  background-position: 0%, 0%;
+  background-size: 11vmin 11vmin;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: opacity 800ms ease, background-size 800ms ease;
+}
+
+#menuitems:hover ~ #menubackgroundpattern {
+  background-size: 10vmin 10vmin;
+  opacity: 0.5;
+}
+
+#menubackgroundimage {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+
