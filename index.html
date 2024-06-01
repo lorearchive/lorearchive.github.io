@@ -1,82 +1,95 @@
 <!DOCTYPE html>
-
-
-<html>
+<html lang="en">
+ <body>
 <head>
-	<title>The Lore Archive</title>
-	<meta charset="utf-8" />
-
-  <link rel="stylesheet" href="styles.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE LORE ARCHIVE</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<div id="menu"> 
-  <div id="menuitems">
-  <a href="https://lorearchive.github.io" class="menuitem">THE</a>
-    <a href="/" class="menuitem">LORE</a>
-  <a href="/" class="menuitem">ARCHIVE</a>
 
-  
-  </div>
-  <div id="menubackgroundpattern">
+    <div class="container">
+        <h1 class="menuitems">THE LORE ARCHIVE</h1>
+        <p>is a collection of documents of Blue Archive's entire lore.</p>
+    </div>
+    <p class="outside-paragraph">We are currently looking for volunteers and translators! To learn more, click here.</p>
+   <div id="menubackgroundpattern">
     <div id="menubackgroundimage"></div>
   </div>
  </div>
-</html>
+   
+</body>
+
 
 <style>
+	html {
+    background-color: rgb(20, 20, 20);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 
 body {
-  background-color: rgb(20, 20, 20);
-  margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
 
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#menu {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+.container {
+    text-align: center;
+    color: #FFFFFF;
 }
 
-#menuitems {
-  margin-left: clamp(4rem, 20vw, 48rem);
-}
-
-.explain {
-  text-align: left;
-  color: #ffffff;
-  font-size: 11px;
-  font-weight: 300;
-  margin-top: 0px;
-  margin-left: 1px;
-}
-
-#menuitems:hover > .menuitem {
-  opacity: 0.3;
-}
-
-#menuitems:hover > .menuitem:hover {
-  opacity: 1;
-}
-
-.menuitem {
-  color: white;
-  font-size: clamp(3rem, 8vw, 8rem);
+h1 {
+  font-size: 2.7em;  
+  margin: 0;
   font-family: 'Space Mono', monospace;
-  font-weight: bold;
-  display: block;
-  text-decoration: none;
-  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-  transition: opacity 400ms ease;
+}
+
+.container p {
+    margin: 0;
+    position: relative;
+    font-size: 1.2em;
+  font-family: 'Space Mono', monospace;
+}
+
+.container p::before {
+    content: "\A";
+    white-space: pre;
+    display: block;
+    height: 1em;
+  
+}
+
+.outside-paragraph {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+   font-family: 'Space Mono', monospace;
+  font-size: 0.8em;
+}
+
+.outside-paragraph::before {
+    content: "\A";
+    white-space: pre;
+    display: block;
+    height: 1em; /* Adjust this value to control the space added */
 }
 
 #menubackgroundpattern {
   height: 100vh;
   width: 100vw;
   background-image: radial-gradient(
-    rgba(255, 255, 255, 0.2) 9%, 
+    rgba(255, 255, 255, 0.1) 9%, 
     transparent 9%
   );
   background-position: 0%, 0%;
@@ -93,17 +106,10 @@ body {
   opacity: 0.5;
 }
 
-#menubackgroundimage {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -2;
-}
-
 
 
 
 	
 </style>
+  
+</html>
