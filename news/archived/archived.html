@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE LORE ARCHIVE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <div class="container">
+        <h1 class="menuitems">THE LORE ARCHIVE</h1>
+    </div>
+	 <p class="update" style="text-align: left;">[04 Oct 2024] I am on track to release pre-alpha on time.<br><br>[01 Oct 2024]i think im going insane<br><br>[28 Sep 2024] Frontend is nearly done... Pre-Alpha rolling out soon.<br><br>[24 Sep 2024] Bootstrap<br><br>[20 Aug 2024] Currently developing frontend using php and html via dokuwiki templates.<br>Probably won't support dark mode.<br><br>[9 Aug 2024] Please fill out <a href="https://forms.gle/zHVAqn6EXB6NrC926">this form</a> to notify me that you are actually reading the updates. <br>If not many, less frequent updates.<br><br>[19 July 2024] Things are running along nicely. 👍<br><br>[10 July 2024] If you have knowledge on creating a dokuwiki template, or<br>a bit of CSS experience, or you just want to help out,<br>please reach out at cirrow@proton.me. Always keen on helpers!<br><br>[24 June 2024] I have partnered up with a team of four, the Lore Archive<br>will be available in broader mediums.<br><br>[22 June 2024]I take back, I have settled with dokuwiki. Later ETA. Sorry.<br><br>[16 June 2024] No... Dokuwiki is missiing some essential stuff like<br>callouts and indentations, gotta use plugins, too much work. Considering bookstack.<br><br>[12 June 2024] I think I'll use dokuwiki with Oracle's VPS for the website.<br>And keep all backup as .txt and a google docs document.</p>
+    
+	 <p class="outside-paragraph">Estimated time of arrival: December 2024 // ETA of Pre-Alpha: Mid-October 2024</p>
+   <div id="menubackgroundpattern">
+    <div id="menubackgroundimage"></div>
+  </div>
+ </div>
+   
+</body>
+
+
+<style>
+	html {
+    background-color: rgb(20, 20, 20);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h1 {
+  font-size: 2.7em;  
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+}
+
+.container p {
+    margin: 0;
+    position: relative;
+    font-size: 1.2em;
+  font-family: 'Space Mono', monospace;
+}
+
+.container p::before {
+    content: "\A";
+    white-space: pre;
+    display: block;
+    height: 1em;
+  
+}
+
+.outside-paragraph {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+   font-family: 'Space Mono', monospace;
+  font-size: 0.8em;
+}
+
+.outside-paragraph::before {
+    content: "\A";
+    white-space: pre;
+    display: block;
+    height: 1em; /* Adjust this value to control the space added */
+}
+
+.update {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+   font-family: 'Space Mono', monospace;
+  font-size: 1em;
+}
+
+#menubackgroundpattern {
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.05) 9%, 
+    transparent 9%
+  );
+  background-position: 0%, 0%;
+  background-size: 11vmin 11vmin;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: opacity 800ms ease, background-size 800ms ease;
+}
+
+#menuitems:hover ~ #menubackgroundpattern {
+  background-size: 10vmin 10vmin;
+  opacity: 0.5;
+}
+
+
+
+
+	
+</style>
+  
+</html>
